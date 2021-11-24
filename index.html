@@ -17,6 +17,11 @@
     const color = ["yellow", "green", "cyan", "black", "crimson"]
     const btn = document.getElementById("btn");
     const colour = document.querySelector(".colour");
+    btn.addEventListener("click",function(){
+        const randomNumber= getRandomNumber();
+        document.body.style.backgroundColor=color[randomNumber];
+        colour.innerHTML=color[randomNumber];
+    });
 </script>
 
 </html>
